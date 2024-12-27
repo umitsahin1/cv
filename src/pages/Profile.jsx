@@ -24,22 +24,22 @@ function Profile() {
             </div>
           </div>
         </div>
-        <div className="w-[476px] h-[241px] flex flex-col gap-10">
-          <p className="text-[24px] leading-[31.99px] tracking-[1%] z-20 font-playfair">
+        <div className="w-[476px] h-[241px] flex flex-col gap-6 py-0 px-4">
+          <p className="font-normal text-[24px] leading-[31.99px] tracking-[1%] z-20 font-playfair">
             About me
           </p>
-          <p className="text-[18px] leading-[27px] tracking-[1%]">
+          <p className="font-normal text-[18px] leading-[27px] tracking-[1%]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
             aut, odit laborum aliquam voluptatum nisi mollitia.
           </p>
-          <p className="text-[18px] leading-[27px] tracking-[1%]">
+          <p className="font-normal text-[18px] leading-[27px] tracking-[1%]">
             Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
             deserunt quam temporibus cumque magnam!
           </p>
         </div>
       </div>
       <img
-        className="absolute left-[860px]  z-10 translate-y-[-32px]"
+        className="absolute left-[880px]  z-10 translate-y-[-32px]"
         src="src/assets/Rectangle 39.png"
       />
     </div>

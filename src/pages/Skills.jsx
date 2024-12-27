@@ -3,9 +3,9 @@ import React from "react";
 function Skills() {
   return (
     <div className=" flex flex-col items-center gap-20 mb-20">
-      <p className="font-medium text-[48px] leading-[58.09px] tracking-[0.1em]">
+      <h1 className="font-medium text-[48px] leading-[58.09px] tracking-[0.1em]">
         Skills
-      </p>
+      </h1>
       <div className="flex gap-6">
         <img src="src/assets/js.png" />
         <img src="src/assets/react.png" />
