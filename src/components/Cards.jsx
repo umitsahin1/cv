@@ -4,8 +4,8 @@ function Cards() {
       <h1 className="font-[500] text-[36px] leading-[43.57px] flex  justify-center">
         Projects
       </h1>
-      <div className="flex justify-between">
-        <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] bg-[#DDEEFE] px-10 flex flex-col gap-[30px]  ">
+      <div className="flex justify-between ">
+        <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] px-10 flex flex-col gap-[30px] bg-[#DDEEFE]  ">
           <h2 className="font-playfair-display font-bold text-[29px] leading-[38.66px] tracking-[5%] mt-[80px]">
             Are you bored?
           </h2>
@@ -45,8 +45,8 @@ function Cards() {
             alt=""
           />
         </div>
-        <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] bg-[#D9F6F1]">
-          <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] bg-[#DDEEFE] px-10 flex flex-col gap-[30px]  ">
+        <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] bg-[#D9F6F1] ">
+          <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px]  px-10 flex flex-col gap-[30px]  ">
             <h2 className="font-playfair-display font-bold text-[29px] leading-[38.66px] tracking-[5%] mt-[80px]">
               Random Jokes
             </h2>

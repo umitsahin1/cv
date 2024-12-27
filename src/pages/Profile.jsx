@@ -4,8 +4,9 @@ function Profile() {
       <p className="font-medium text-[36px] leading-[43.57px] tracking-[1px]">
         Profile
       </p>
+      <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px] absolute left-[340px] z-10  translate-y-[70px] bg-[#52525280]"></div>
       <div className="flex  items-center gap-10">
-        <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px]">
+        <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px] z-20">
           <p className="mb-[40px] text-[24px] leading-[31.99px] tracking-[0.02em] text-[#EA2678]">
             Basic Information
           </p>
