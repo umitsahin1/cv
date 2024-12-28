@@ -10,8 +10,9 @@ function Cards() {
             Are you bored?
           </h2>
           <p className="font-normal text-[16px] leading-[24px] w-[368px]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            aut, odit laborum aliquam voluptatum nisi mollitia.
+            In my project, I designed a dynamic pizza ordering system using
+            React. Users can create orders with customizations such as topping
+            selection, size preference, and special notes.
           </p>
           <div className="flex gap-[10px] w-[280px] flex-wrap ">
             <div className="w-[81px] h-[32px] rounded-[76px] p-[6px_20px_10px_16px]  bg-white font-bold text-[16px] leading-[16px] ">
@@ -38,11 +39,9 @@ function Cards() {
               <img src="src/assets/arrow-right.svg" />
             </div>
           </div>
-          <img className="mt-[50px]" src="src/assets/Rectangle 37.png" />
           <img
-            className="absolute left-[410px]  z-10 translate-y-[478px] w-[296px] h-[185px]"
-            src="src/assets/Screenshot 2024-12-27 at 18.42.50.png"
-            alt=""
+            className="mt-[-75px] w-[596px] h-[485px]"
+            src="src/assets/pizza.png"
           />
         </div>
         <div className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] bg-[#D9F6F1] ">
@@ -82,11 +81,10 @@ function Cards() {
                 <img src="src/assets/arrow-right.svg" />
               </div>
             </div>
-            <img className="mt-[50px]" src="src/assets/Rectangle 37.png" />
+
             <img
-              className="absolute left-[974px]  z-10 translate-y-[478px] w-[296px] h-[185px]"
-              src="src/assets/Screenshot 2024-12-27 at 18.42.50.png"
-              alt=""
+              className="mt-[-50px] w-[596px] h-[485px]"
+              src="src/assets/filmler.png"
             />
           </div>
         </div>

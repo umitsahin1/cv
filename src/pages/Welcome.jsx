@@ -1,14 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setTheme } from "../store/actions";
 
 function Welcome() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const dispatch = useDispatch();
+  const { isDarkMode } = useSelector((state) => state.theme);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
+    if (savedTheme) {
+      dispatch(setTheme(savedTheme));
     }
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -20,8 +23,8 @@ function Welcome() {
     }
   }, [isDarkMode]);
 
-  const handleToggle = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+  const toggleTheme = () => {
+    dispatch(setTheme(!isDarkMode));
   };
 
   return (
@@ -32,10 +35,10 @@ function Welcome() {
           className="checkbox"
           id="checkbox"
           checked={isDarkMode}
-          onChange={handleToggle}
+          onChange={toggleTheme}
         />
         <label for="checkbox" className="checkbox-label">
-          <span class="ball"></span>
+          <span className="ball"></span>
         </label>
         <p className="text-[15px] leading-[18.15px] tracking-[0.1em] font-bold w-[110px]">
           {isDarkMode ? "LIGHT MODE" : "DARK MODE"}
@@ -66,8 +69,8 @@ function Welcome() {
             src="src/assets/Rectangle 2.png"
           />
           <p className="font-inter font-medium text-[42px] leading-[64px] tracking-[0.01em] pr-[100px] z-20 absolute">
-            I’m Almila. I’m a full-stack developer. I can craft solid and
-            scalable frontend products. Let’s meet!
+            I’m Umit. I’m a full-stack developer. I can craft solid and scalable
+            frontend products. Let’s meet!
           </p>
           <div className="mt-[340px]">
             <div className="flex gap-5 mb-4 ">
@@ -87,7 +90,7 @@ function Welcome() {
             <p className="span w-[500px] text-[18px] leading-[32px]">
               Currently <span>Freelancing</span> for{" "}
               <span>UX, UI, & Web Design</span> Project . Invite me to join your
-              team -> <span>pratamaiosi@gmail.com</span>
+              team -> <span>umitsahin21@gmail.com</span>
             </p>
           </div>
         </div>
