@@ -5,7 +5,7 @@ const initialThemeState = {
 };
 
 const initialLanguageState = {
-  language: "tr",
+  language: "en",
 };
 
 const initialDataState = {

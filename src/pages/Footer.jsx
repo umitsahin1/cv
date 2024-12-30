@@ -1,8 +1,14 @@
+import { useSelector } from "react-redux";
+import { languageData } from "../data/language";
+
 function Footer() {
+  const { language } = useSelector((state) => state.language);
+
+  const texts = languageData[language];
   return (
     <div className="w-[758px] h-[137px]  mt-[50px] mb-[50px] flex justify-around items-center ">
       <p className="font-medium text-[42px] leading-[63px] w-[450px] text-right z-20">
-        Let’s work together on your next product.
+        {texts.footer_description}
       </p>
       <div className="w-[248px] h-[15px] rounded-sm bg-[#82BBFF] absolute left-[650px]  z-10 translate-y-[-15px] "></div>
       <div className="w-[158px] h-[137px] flex flex-col">

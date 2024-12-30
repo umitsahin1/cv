@@ -21,9 +21,11 @@ export const setData = (data) => ({
 export const fetchData = () => {
   return (dispatch) => {
     axios
-      .get("https://reqres.in/api/workintech")
+      .get(
+        "https://6771cde1ee76b92dd4908587.mockapi.io/api/workintech/projectsData"
+      )
       .then((response) => {
-        dispatch(setData(response.data.data));
+        dispatch(setData(response.data));
       })
       .catch((error) => {
         console.error("Error fetching data:", error);

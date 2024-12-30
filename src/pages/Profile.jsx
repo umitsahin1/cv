@@ -1,44 +1,45 @@
+import { useSelector } from "react-redux";
+import { languageData } from "../data/language";
+
 function Profile() {
+  const { language } = useSelector((state) => state.language);
+
+  const texts = languageData[language];
   return (
     <div className="bg-[#F4F4F4] h-[738px]  flex items-center justify-center flex-col w-full gap-20">
       <p className="font-medium text-[36px] leading-[43.57px] tracking-[1px]">
-        Profile
+        {texts.profile}
       </p>
       <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px] absolute left-[340px] z-10  translate-y-[70px] bg-[#52525280]"></div>
       <div className="flex  items-center gap-10">
         <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px] z-20">
           <p className="mb-[40px] text-[24px] leading-[31.99px] tracking-[0.02em] text-[#EA2678]">
-            Basic Information
+            {texts.basic_information}
           </p>
           <div className="flex gap-[40px]">
             <div className="flex flex-col gap-4 font-semibold text-[18px] leading-[21.78px] tracking-[0.05em] ">
-              <p>Date of birth</p>
-              <p>City of Residence</p>
-              <p>Education Status</p>
-              <p>Preferred Role</p>
+              <p>{texts.date_of_birth}</p>
+              <p>{texts.city_of_residence}</p>
+              <p>{texts.education_status}</p>
+              <p>{texts.preferred_role}</p>
             </div>
             <div className="flex flex-col gap-6 w-[350px] text-[18px] leading-[21.78px] tracking-[0.1px]">
               <p>11.06.1991</p>
-              <p>Istanbul</p>
-              <p>Istanbul Technical University Mechanical Engineering 2017</p>
+              <p>{texts.city_of_residence_answer}</p>
+              <p>{texts.education_status_answer}</p>
               <p>Full Stack Developer</p>
             </div>
           </div>
         </div>
         <div className="w-[476px] h-[241px] flex flex-col gap-6 py-0 px-4 mt-[-50px]">
           <p className="font-normal text-[24px] leading-[31.99px] tracking-[1%] z-20 font-playfair">
-            About me
+            {texts.aboutMe}
           </p>
           <p className="font-normal text-[18px] leading-[27px] tracking-[1%]">
-            Hello, I'm Umit. With my passion for software development and
-            innovative approach, I deliver sustainable solutions while
-            prioritizing user experience. As a Full Stack Developer, I ensure
-            seamless frontend and backend integration.
+            {texts.profile_description_1}
           </p>
           <p className="font-normal text-[18px] leading-[27px] tracking-[1%]">
-            My interest in technology allows me to build high-performance
-            software. I am committed to continuous learning and growth in the
-            software world.
+            {texts.profile_description_2}
           </p>
         </div>
       </div>
