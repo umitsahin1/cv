@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import Skill from "../components/skill";
 import { languageData } from "../data/language";
 import { skillsData } from "../data/skillsData";
+import Skill from "../components/skill";
 
 function Skills() {
   const { language } = useSelector((state) => state.language);
