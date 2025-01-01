@@ -2,13 +2,22 @@ import { useSelector } from "react-redux";
 import { languageData } from "../data/language";
 
 function Cards({ item }) {
-  const { language } = useSelector((state) => state.language);
+  const darkModeColors = ["#495351", "#2D3235"];
 
+  const { isDarkMode } = useSelector((state) => state.theme);
+
+  const { language } = useSelector((state) => state.language);
   const texts = languageData[language];
+
+  const colorIndex = item.id % darkModeColors.length;
+  const backgroundColor = isDarkMode
+    ? darkModeColors[colorIndex]
+    : item.backgroundColor;
+
   return (
     <div
       className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] px-10 flex flex-col gap-[20px]"
-      style={{ backgroundColor: item.backgroundColor }}
+      style={{ backgroundColor }}
     >
       <h2 className="font-playfair-display font-bold text-[29px] leading-[38.66px] tracking-[5%] mt-[50px]">
         {item.name}
@@ -20,21 +29,29 @@ function Cards({ item }) {
         {item.tags.map((tag, index) => (
           <div
             key={index}
-            className="w-[81px] h-[32px] rounded-[76px] p-[6px_20px_10px_16px]  bg-white font-bold text-[16px] leading-[16px] "
+            className={`w-[81px] h-[32px] rounded-[76px] p-[6px_20px_10px_16px] ${
+              isDarkMode ? "bg-[#525252]" : "bg-white"
+            } font-bold text-[16px] leading-[16px]`}
           >
             {tag}
           </div>
         ))}
       </div>
-      <div className="font-semibold text-[20px] leading-[30px] flex justify-between">
-        <a href="https://github.com/umitsahin1" target="_blank">
-          <p>{texts.view_on_github}</p>
+      <div className="font-semibold text-[20px] leading-[30px] flex justify-between z-10">
+        <a href={item.github} target="_blank">
+          {texts.view_on_github}
         </a>
         <div className="flex">
-          <a href="">
-            <p>{texts.go_to_app}</p>
+          <a href={item.vercel} target="_blank">
+            {texts.go_to_app}
           </a>
-          <img src="src/assets/arrow-right.svg" />
+          <img
+            src={
+              isDarkMode
+                ? "src/assets/arrow-darkmode-right.svg"
+                : "src/assets/arrow-right.svg"
+            }
+          />
         </div>
       </div>
       <img className="mt-[-105px] w-[596px] h-[485px]" src={item.img} />

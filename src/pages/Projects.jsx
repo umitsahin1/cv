@@ -28,8 +28,8 @@ function Projects() {
         {texts.projects}
       </h1>
       <div className="flex gap-10">
-        {localizedData.map((item, index) => (
-          <Cards item={item} key={index} />
+        {localizedData.map((item) => (
+          <Cards item={item} key={item.id} />
         ))}
       </div>
     </div>

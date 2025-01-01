@@ -3,16 +3,25 @@ import { languageData } from "../data/language";
 
 function Profile() {
   const { language } = useSelector((state) => state.language);
+  const { isDarkMode } = useSelector((state) => state.theme);
 
   const texts = languageData[language];
   return (
-    <div className="bg-[#F4F4F4] h-[738px]  flex items-center justify-center flex-col w-full gap-20">
+    <div
+      className={` h-[738px]  flex items-center justify-center flex-col w-full gap-20  ${
+        isDarkMode ? "bg-[#2A262B]" : "bg-[#F4F4F4]"
+      }`}
+    >
       <p className="font-medium text-[36px] leading-[43.57px] tracking-[1px]">
         {texts.profile}
       </p>
-      <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px] absolute left-[340px] z-10  translate-y-[70px] bg-[#52525280]"></div>
+      <div className="card w-[500px] h-[313px] rounded-[12px] flex flex-col   justify-center pl-[30px] absolute left-[340px] z-10  translate-y-[70px] bg-[#52525280]"></div>
       <div className="flex  items-center gap-10">
-        <div className="card w-[500px] h-[313px] bg-white rounded-[12px] flex flex-col   justify-center pl-[30px] z-20">
+        <div
+          className={`card w-[500px] h-[313px] rounded-[12px] flex flex-col   justify-center pl-[30px] z-20 ${
+            isDarkMode ? "bg-[#525252]" : "bg-[#FFFFFF]"
+          }`}
+        >
           <p className="mb-[40px] text-[24px] leading-[31.99px] tracking-[0.02em] text-[#EA2678]">
             {texts.basic_information}
           </p>

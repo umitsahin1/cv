@@ -43,7 +43,11 @@ function Welcome() {
   };
 
   return (
-    <div className="bg-[#F4F4F4] h-[738px] flex items-center justify-center flex-col w-full">
+    <div
+      className={`h-[738px] flex items-center justify-center flex-col w-full ${
+        isDarkMode ? "bg-[#2A262B]" : "bg-[#F4F4F4]"
+      }`}
+    >
       <div className="flex gap-5 justify-end items-center w-[1107px] mt-[10px] mb-[50px] text-[#777777]">
         <input
           type="checkbox"
@@ -55,7 +59,11 @@ function Welcome() {
         <label htmlFor="checkbox" className="checkbox-label">
           <span className="ball"></span>
         </label>
-        <p className="text-[15px] leading-[18.15px] tracking-[0.1em] font-bold w-[110px]">
+        <p
+          className={`text-[15px] leading-[18.15px] tracking-[0.1em] font-bold w-[110px] ${
+            isDarkMode ? "text-[#D9D9D9]" : "text-[#777777]"
+          }`}
+        >
           {isDarkMode ? "LIGHT MODE" : "DARK MODE"}
         </p>
         <p>|</p>
@@ -71,7 +79,11 @@ function Welcome() {
       </div>
       <img
         className="absolute top-0 left-[550px]"
-        src="src/assets/Ellipse 10.png"
+        src={
+          isDarkMode
+            ? "src/assets/Ellipse 10-darkmode.png"
+            : "src/assets/Ellipse 10.png"
+        }
       />
       <img
         className="absolute bottom-[300px] right-0"
@@ -94,13 +106,21 @@ function Welcome() {
               <a href="https://www.linkedin.com/in/umitsahin1/" target="_blank">
                 <img
                   className="w-[31px] h-[33px]"
-                  src="src/assets/LinkedIn.png"
+                  src={
+                    isDarkMode
+                      ? "src/assets/LinkedIn-darkmode.png"
+                      : "src/assets/LinkedIn.png"
+                  }
                 />
               </a>
               <a href="https://github.com/umitsahin1" target="_blank">
                 <img
                   className="w-[31px] h-[33px]"
-                  src="src/assets/github.svg"
+                  src={
+                    isDarkMode
+                      ? "src/assets/github.-darkmodepng.png"
+                      : "src/assets/github.svg"
+                  }
                 />
               </a>
             </div>
