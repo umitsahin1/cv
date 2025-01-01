@@ -1,8 +1,4 @@
 import { useSelector } from "react-redux";
-<<<<<<< HEAD
-=======
-import Skill from "../components/skill.jsx";
->>>>>>> 40cbcb70920b6ec15f3909b0906e1ce82f36c6e0
 import { languageData } from "../data/language";
 import { skillsData } from "../data/skillsData";
 import Skill from "../components/skill";

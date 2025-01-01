@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
 
-
 function Welcome() {
   const dispatch = useDispatch();
   const { isDarkMode } = useSelector((state) => state.theme);
@@ -57,9 +56,18 @@ function Welcome() {
           checked={isDarkMode}
           onChange={toggleTheme}
         />
-        <label htmlFor="checkbox" className="checkbox-label">
+        <label
+          htmlFor="checkbox"
+          className={`checkbox-label ${
+            isDarkMode ? "bg-[#000000]" : "bg-[#e92577]"
+          }`}
+        >
           <span className="ball"></span>
+          <span
+            className={`ball-dark ${isDarkMode ? "bg-[#000000]" : ""}`}
+          ></span>
         </label>
+
         <p
           className={`text-[15px] leading-[18.15px] tracking-[0.1em] font-bold w-[110px] ${
             isDarkMode ? "text-[#D9D9D9]" : "text-[#777777]"
@@ -70,10 +78,10 @@ function Welcome() {
         <p>|</p>
         <p
           onClick={toggleLanguage}
-          className="font-bold  w-[178px] hover:scale-105 transition-transform duration-200 cursor-pointer "
+          className="font-bold  w-[178px] hover:scale-105 transition-transform duration-200 cursor-pointer  "
         >
-          <span className="text-[15px] leading-[18.15px] tracking-[0.1em] text-[#E92577]">
-            {language === "en" ? "TÜRKÇE’YE" : "SWITCH TO "}
+          <span className="text-[15px] leading-[18.15px] tracking-[0.1em] text-[#E92577]  ">
+            {language === "en" ? "TÜRKÇE’YE " : "SWITCH TO "}
           </span>
           {language === "en" ? "GEÇ" : "ENGLISH"}
         </p>

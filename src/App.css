@@ -12,7 +12,6 @@
 }
 
 .checkbox-label {
-  background-color: #e92577;
   width: 55px;
   height: 24px;
   border-radius: 220px;
@@ -29,12 +28,26 @@
   width: 15px;
   height: 16px;
   position: absolute;
-  left: 2px;
+  right: 2px;
   top: 4px;
   border-radius: 50%;
   transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(35px);
+  transform: translateX(-33px);
+}
+
+.checkbox-label .ball-dark {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 1px;
+  top: 5px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball-dark {
+  transform: translateX(-31px);
 }
