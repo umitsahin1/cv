@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
 
+
 function Welcome() {
   const dispatch = useDispatch();
   const { isDarkMode } = useSelector((state) => state.theme);
