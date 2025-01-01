@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import Skill from "../components/skill";
+import Skill from "../components/skill.jsx";
 import { languageData } from "../data/language";
 import { skillsData } from "../data/skillsData";
 
