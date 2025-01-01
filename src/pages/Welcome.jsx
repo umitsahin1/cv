@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
+import logo from "../../src/assets/Ellipse 10.png
 
 function Welcome() {
   const dispatch = useDispatch();
