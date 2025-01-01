@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
-import logo from "../../src/assets/Ellipse 10.png"
+
 
 function Welcome() {
   const dispatch = useDispatch();
@@ -72,7 +72,7 @@ function Welcome() {
       </div>
       <img
         className="absolute top-0 left-[550px]"
-        src={logo}
+        src="src/assets/Ellipse 10.png"
       />
       <img
         className="absolute bottom-[300px] right-0"
