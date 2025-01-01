@@ -72,7 +72,7 @@ function Welcome() {
       </div>
       <img
         className="absolute top-0 left-[550px]"
-        src="src/assets/Ellipse 10.png"
+        src={logo}
       />
       <img
         className="absolute bottom-[300px] right-0"
