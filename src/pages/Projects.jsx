@@ -16,13 +16,19 @@ function Projects() {
 
   const texts = languageData[language];
 
+  const localizedData = data.map((item) => ({
+    ...item,
+    name: item.name[language],
+    description: item.description[language],
+  }));
+
   return (
     <div className="w-[1064px] flex flex-col gap-10">
       <h1 className="font-[500] text-[36px] leading-[43.57px] flex  justify-center">
         {texts.projects}
       </h1>
       <div className="flex gap-10">
-        {data.map((item, index) => (
+        {localizedData.map((item, index) => (
           <Cards item={item} key={index} />
         ))}
       </div>

@@ -12,7 +12,7 @@ function Welcome() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const savedLanguage = localStorage.getItem("language"); 
+    const savedLanguage = localStorage.getItem("language");
 
     if (savedTheme) {
       dispatch(setTheme(savedTheme === "dark"));
@@ -47,7 +47,7 @@ function Welcome() {
       <div className="flex gap-5 justify-end items-center w-[1107px] mt-[10px] mb-[50px] text-[#777777]">
         <input
           type="checkbox"
-          className="checkbox "
+          className="checkbox"
           id="checkbox"
           checked={isDarkMode}
           onChange={toggleTheme}

@@ -21,6 +21,8 @@ export const languageData = {
     city_of_residence_answer: "Istanbul",
     education_status_answer:
       "Istanbul Technical University-Mechanical Engineering-2017",
+    go_to_app: "Go to app",
+    view_on_github: "View on Github",
   },
   tr: {
     profile: "Profil",
@@ -44,5 +46,7 @@ export const languageData = {
     city_of_residence_answer: "İstanbul",
     education_status_answer:
       "İstanbul Teknik Üniversitesi-Makina Mühendisliği-2017",
+    go_to_app: "Uygulamaya Git",
+    view_on_github: "Github'da Görüntüle",
   },
 };

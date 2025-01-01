@@ -1,4 +1,10 @@
+import { useSelector } from "react-redux";
+import { languageData } from "../data/language";
+
 function Cards({ item }) {
+  const { language } = useSelector((state) => state.language);
+
+  const texts = languageData[language];
   return (
     <div
       className="w-[500px] h-[668px] top-[1936px] left-[193px] rounded-[12px] px-10 flex flex-col gap-[20px]"
@@ -22,11 +28,11 @@ function Cards({ item }) {
       </div>
       <div className="font-semibold text-[20px] leading-[30px] flex justify-between">
         <a href="https://github.com/umitsahin1" target="_blank">
-          <p>View on Github</p>
+          <p>{texts.view_on_github}</p>
         </a>
         <div className="flex">
           <a href="">
-            <p>Go to app</p>
+            <p>{texts.go_to_app}</p>
           </a>
           <img src="src/assets/arrow-right.svg" />
         </div>
