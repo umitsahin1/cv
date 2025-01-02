@@ -6,34 +6,34 @@ function Footer() {
 
   const texts = languageData[language];
   return (
-    <div className="w-[758px] h-[137px]  mt-[50px] mb-[50px] flex justify-around items-center ">
-      <p className="font-medium text-[42px] leading-[63px] w-[450px] text-right z-20">
+    <div className="w-[47.375rem] h-[8.5625rem] mt-[3.125rem] mb-[3.125rem] flex justify-around items-center ">
+      <p className="font-medium text-[2.625rem] leading-[3.9375rem] w-[28.125rem] text-right z-20">
         {texts.footer_description}
       </p>
-      <div className="w-[248px] h-[15px] rounded-sm bg-[#82BBFF] absolute left-[650px]  z-10 translate-y-[-15px] "></div>
-      <div className="w-[158px] h-[137px] flex flex-col">
+      <div className="w-[15.5rem] h-[0.9375rem] rounded-sm bg-[#82BBFF] absolute left-[40.625rem]  z-10 translate-y-[-0.9375rem] "></div>
+      <div className="w-[9.875rem] h-[8.5625rem] flex flex-col">
         <a
-          className="font-medium text-[16px] leading-[36px] text-[#1769FF]"
+          className="font-medium text-[1rem] leading-[2.25rem] text-[#1769FF]"
           href="https://github.com/umitsahin1"
           target="_blank"
         >
           Github
         </a>
         <a
-          className="font-medium text-[16px] leading-[36px] text-[##0A0A14]"
+          className="font-medium text-[1rem] leading-[2.25rem] text-[#0A0A14]"
           href=""
         >
           Personal Blog
         </a>
         <a
-          className="font-medium text-[16px] leading-[36px] text-[#0077B5]"
+          className="font-medium text-[1rem] leading-[2.25rem] text-[#0077B5]"
           href="https://www.linkedin.com/in/umitsahin1/"
           target="_blank"
         >
           Linkedin
         </a>
         <a
-          className="font-medium text-[16px] leading-[36px] text-[#AF0C48]"
+          className="font-medium text-[1rem] leading-[2.25rem] text-[#AF0C48]"
           href=""
         >
           Email

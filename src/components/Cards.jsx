@@ -29,15 +29,15 @@ function Cards({ item }) {
         {item.tags.map((tag, index) => (
           <div
             key={index}
-            className={`w-[81px] h-[32px] rounded-[76px] p-[6px_20px_10px_16px] ${
+            className={`w-[5.0625rem] h-[2rem] rounded-[4.75rem] p-[0.375rem_1.25rem_0.625rem_1rem] ${
               isDarkMode ? "bg-[#525252]" : "bg-white"
-            } font-bold text-[16px] leading-[16px]`}
+            } font-bold text-[1rem] leading-[1rem]`}
           >
             {tag}
           </div>
         ))}
       </div>
-      <div className="font-semibold text-[20px] leading-[30px] flex justify-between z-10">
+      <div className="font-semibold text-[1.25rem] leading-[1.875rem] flex justify-between z-10">
         <a href={item.github} target="_blank">
           {texts.view_on_github}
         </a>
@@ -54,7 +54,10 @@ function Cards({ item }) {
           />
         </div>
       </div>
-      <img className="mt-[-105px] w-[596px] h-[485px]" src={item.img} />
+      <img
+        className="mt-[-6.5625rem] w-[37.25rem] h-[30.3125rem]"
+        src={item.img}
+      />
     </div>
   );
 }

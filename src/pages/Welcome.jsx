@@ -44,11 +44,11 @@ function Welcome() {
 
   return (
     <div
-      className={`h-[738px] flex items-center justify-center flex-col w-full ${
+      className={`h-[46.125rem] flex items-center justify-center flex-col w-full ${
         isDarkMode ? "bg-[#2A262B]" : "bg-[#F4F4F4]"
       }`}
     >
-      <div className="flex gap-5 justify-end items-center w-[1107px] mt-[10px] mb-[50px] text-[#777777]">
+      <div className="flex gap-5 justify-end items-center w-[69.1875rem] mt-[0.625rem] mb-[3.125rem] text-[#777777]">
         <input
           type="checkbox"
           className="checkbox"
@@ -69,7 +69,7 @@ function Welcome() {
         </label>
 
         <p
-          className={`text-[15px] leading-[18.15px] tracking-[0.1em] font-bold w-[110px] ${
+          className={`text-[0.9375rem] leading-[1.134375rem]] tracking-[0.1em] font-bold w-[6.875rem] ${
             isDarkMode ? "text-[#D9D9D9]" : "text-[#777777]"
           }`}
         >
@@ -78,16 +78,16 @@ function Welcome() {
         <p>|</p>
         <p
           onClick={toggleLanguage}
-          className="font-bold  w-[178px] hover:scale-105 transition-transform duration-200 cursor-pointer  "
+          className="font-bold w-[11.125rem] hover:scale-105 transition-transform duration-200 cursor-pointer  "
         >
-          <span className="text-[15px] leading-[18.15px] tracking-[0.1em] text-[#E92577]  ">
+          <span className="text-[15px] leading-[1.134375rem] tracking-[0.1em] text-[#E92577]">
             {language === "en" ? "TÜRKÇE’YE " : "SWITCH TO "}
           </span>
           {language === "en" ? "GEÇ" : "ENGLISH"}
         </p>
       </div>
       <img
-        className="absolute top-0 left-[550px]"
+        className="absolute top-0 left-[34.375rem]"
         src={
           isDarkMode
             ? "public/Ellipse 10-darkmode.png"
@@ -95,26 +95,26 @@ function Welcome() {
         }
       />
       <img
-        className="absolute bottom-[300px] right-0"
+        className="absolute bottom-[18.75rem] right-0"
         src="public/Rectangle 18.svg"
       />
-      <div className="flex w-[1107px] h-[493px] m-0 ">
-        <div className="w-[679px] relative">
-          <p className="font-Inter font-normal text-[30px] leading-[36.31px] tracking-[0.1em] mb-8">
+      <div className="flex w-[69.1875rem] h-[30.8125rem] m-0 ">
+        <div className="w-[42.4375rem] relative">
+          <p className="font-Inter font-normal text-[1.875rem] leading-[2.269375rem] tracking-[0.1em] mb-8">
             {texts.welcome}
           </p>
           <img
-            className="absolute left-[-20px] z-10 translate-y-[40px]"
+            className="absolute left-[-1.25rem] z-10 translate-y-[2.5rem]"
             src="public/Rectangle 2.png"
           />
-          <p className="font-inter font-medium text-[42px] leading-[64px] tracking-[0.01em] pr-[100px] z-20 absolute">
+          <p className="font-inter font-medium text-[2.625rem] leading-[4rem] tracking-[0.01em] pr-[6.25rem] z-20 absolute">
             {texts.welcome_description}
           </p>
-          <div className="mt-[340px]">
+          <div className="mt-[21.25rem]">
             <div className="flex gap-5 mb-4">
               <a href="https://www.linkedin.com/in/umitsahin1/" target="_blank">
                 <img
-                  className="w-[31px] h-[33px]"
+                  className="w-[1.9375rem] h-[2.0625rem]"
                   src={
                     isDarkMode
                       ? "public/LinkedIn-darkmode.png"
@@ -124,7 +124,7 @@ function Welcome() {
               </a>
               <a href="https://github.com/umitsahin1" target="_blank">
                 <img
-                  className="w-[31px] h-[33px]"
+                  className="w-[1.9375rem] h-[2.0625rem]"
                   src={
                     isDarkMode
                       ? "public/github.-darkmodepng.png"
@@ -134,7 +134,7 @@ function Welcome() {
               </a>
             </div>
             <p
-              className=" span w-[480px] text-[18px] leading-[32px]"
+              className=" span w-[30rem] text-[1.125rem] leading-[2rem]"
               dangerouslySetInnerHTML={{
                 __html: texts.freelancing_text,
               }}
@@ -144,7 +144,8 @@ function Welcome() {
         <div className="relative mt-10">
           <img className="z-10" src="public/Rectangle 3.png" />
           <img
-            className="w-[341px] h-[341px] rounded-[22px] z-20 absolute top-0 left-[50px] transform translate-x-[-30px] translate-y-[20px]"
+            className=" w-[21.3125rem]  h-[21.3125rem] rounded-[1.375rem] z-20 absolute top-0 left-[3.125rem] transform 
+              translate-x-[-1.875rem] translate-y-[1.25rem]"
             src="public/2022-05-25 14-03-49.JPG"
           />
         </div>

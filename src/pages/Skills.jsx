@@ -8,7 +8,7 @@ function Skills() {
   const texts = languageData[language];
   return (
     <div className="flex flex-col items-center gap-20 mb-20">
-      <h1 className="font-medium text-[48px] leading-[58.09px] tracking-[0.1em]">
+      <h1 className="font-medium text-[3rem] leading-[3.630625rem] tracking-[0.1em]">
         {texts.skills}
       </h1>
       <div className="flex gap-10 ">
