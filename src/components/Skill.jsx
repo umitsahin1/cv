@@ -15,12 +15,7 @@ function Skill({ skill }) {
           {skill.name}
         </h2>
       </div>
-      <img
-        className="absolute bottom-[-15.625rem] left-0"
-        src="public/Rectangle 22.png"
-        className="absolute bottom-[-250px] left-0"
-        src={Rectangle22}
-      />
+      <img className="absolute bottom-[-15.625rem] left-0" src={Rectangle22} />
       <div
         className={`w-[7.5625rem] h-[7.5625rem] border-[1.3125rem] ${
           isDarkMode ? "border-[#525252]" : "border-[#D9D9D9]"

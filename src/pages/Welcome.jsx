@@ -88,11 +88,7 @@ function Welcome() {
       </div>
       <img
         className="absolute top-0 left-[34.375rem]"
-        src={
-          isDarkMode
-            ? "/Ellipse 10-darkmode.png"
-            : "/Ellipse 10.png"
-        }
+        src={isDarkMode ? "/Ellipse 10-darkmode.png" : "/Ellipse 10.png"}
       />
       <img
         className="absolute bottom-[300px] right-0"
@@ -115,21 +111,13 @@ function Welcome() {
               <a href="https://www.linkedin.com/in/umitsahin1/" target="_blank">
                 <img
                   className="w-[1.9375rem] h-[2.0625rem]"
-                  src={
-                    isDarkMode
-                      ? "/LinkedIn-darkmode.png"
-                      : "/LinkedIn.png"
-                  }
+                  src={isDarkMode ? "/LinkedIn-darkmode.png" : "/LinkedIn.png"}
                 />
               </a>
               <a href="https://github.com/umitsahin1" target="_blank">
                 <img
                   className="w-[1.9375rem] h-[2.0625rem]"
-                  src={
-                    isDarkMode
-                      ? "/github.-darkmodepng.png"
-                      : "/github.svg"
-                  }
+                  src={isDarkMode ? "/github.-darkmodepng.png" : "/github.svg"}
                 />
               </a>
             </div>
@@ -144,7 +132,7 @@ function Welcome() {
         <div className="relative mt-10">
           <img className="z-10" src="/Rectangle 3.png" />
           <img
-            className="w-[341px] h-[341px] rounded-[22px] z-20 absolute top-0 left-[50px] transform translate-x-[-30px] translate-y-[20px]"
+            className="w-[21.3125rem] h-[21.3125rem] rounded-[1.375rem] z-20 absolute top-0 left-[3.125rem] transform translate-x-[-1.875rem] translate-y-[1.25rem]"
             src="public/2022-05-25 14-03-49.JPG"
           />
         </div>
