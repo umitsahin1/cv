@@ -92,7 +92,7 @@ function Welcome() {
       />
       <img
         className="absolute bottom-[300px] right-0"
-        src="public/Rectangle 18.svg"
+        src="/Rectangle 18.svg"
       />
       <div className="flex w-[69.1875rem] h-[30.8125rem] m-0 ">
         <div className="w-[42.4375rem] relative">
@@ -101,7 +101,7 @@ function Welcome() {
           </p>
           <img
             className="absolute left-[-20px] z-10 translate-y-[40px]"
-            src="public/Rectangle 2.png"
+            src="/Rectangle 2.png"
           />
           <p className="font-inter font-medium text-[2.625rem] leading-[4rem] tracking-[0.01em] pr-[6.25rem] z-20 absolute">
             {texts.welcome_description}
@@ -133,7 +133,7 @@ function Welcome() {
           <img className="z-10" src="/Rectangle 3.png" />
           <img
             className="w-[21.3125rem] h-[21.3125rem] rounded-[1.375rem] z-20 absolute top-0 left-[3.125rem] transform translate-x-[-1.875rem] translate-y-[1.25rem]"
-            src="public/2022-05-25 14-03-49.JPG"
+            src="/2022-05-25 14-03-49.JPG"
           />
         </div>
       </div>
