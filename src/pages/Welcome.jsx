@@ -11,7 +11,7 @@ import LinkedIn from "/LinkedIn.png"
 import githubdarkmodepng from "/github.-darkmodepng.png" 
 import github from "/github.svg" 
 import Rectangle3 from "/Rectangle 3.png"  
-import photo from "/2022-05-25 14-03-49.JPG"     
+     
 
 function Welcome() {
   const dispatch = useDispatch();
