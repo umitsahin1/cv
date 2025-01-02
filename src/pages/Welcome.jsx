@@ -155,7 +155,7 @@ function Welcome() {
           <img className="z-10" src={Rectangle3} />
           <img
             className="w-[341px] h-[341px] rounded-[22px] z-20 absolute top-0 left-[50px] transform translate-x-[-30px] translate-y-[20px]"
-            src={photo}
+            src="/2022-05-25 14-03-49.JPG"
           />
         </div>
       </div>
