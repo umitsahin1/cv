@@ -2,14 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
-import Rectangle18 from "/Rectangle 18.svg"
-import Ellipse10dark from "/Ellipse 10-darkmode.png"
-import Ellipse10 from "/Ellipse 10.png"
-import Rectangle2 from "/Rectangle 2.png"
-import LinkedIndarkmode from "/LinkedIn-darkmode.png"
-import LinkedIn from "/LinkedIn.png"   
-import Rectangle3 from "/Rectangle 3.png"  
-     
 
 function Welcome() {
   const dispatch = useDispatch();
@@ -98,13 +90,13 @@ function Welcome() {
         className="absolute top-0 left-[550px]"
         src={
           isDarkMode
-            ? {Ellipse10dark}
-            : {Ellipse10}
+            ? "/Ellipse 10-darkmode.png"
+            : "/Ellipse 10.png"
         }
       />
       <img
         className="absolute bottom-[300px] right-0"
-        src={Rectangle18}
+        src="/Rectangle 18.svg"
       />
       <div className="flex w-[1107px] h-[493px] m-0 ">
         <div className="w-[679px] relative">
@@ -113,7 +105,7 @@ function Welcome() {
           </p>
           <img
             className="absolute left-[-20px] z-10 translate-y-[40px]"
-            src={Rectangle2}
+            src="/Rectangle 2.png"
           />
           <p className="font-inter font-medium text-[42px] leading-[64px] tracking-[0.01em] pr-[100px] z-20 absolute">
             {texts.welcome_description}
@@ -125,8 +117,8 @@ function Welcome() {
                   className="w-[31px] h-[33px]"
                   src={
                     isDarkMode
-                      ? {LinkedIndarkmode}
-                      : {LinkedIn}
+                      ? "/LinkedIn-darkmode.png"
+                      : "/LinkedIn.png"
                   }
                 />
               </a>
@@ -150,7 +142,7 @@ function Welcome() {
           </div>
         </div>
         <div className="relative mt-10">
-          <img className="z-10" src={Rectangle3} />
+          <img className="z-10" src="/Rectangle 3.png" />
           <img
             className="w-[341px] h-[341px] rounded-[22px] z-20 absolute top-0 left-[50px] transform translate-x-[-30px] translate-y-[20px]"
             src="/2022-05-25 14-03-49.JPG"
