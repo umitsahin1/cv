@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
+import logo1 from "./Rectangle 18.svg"
 
 function Welcome() {
   const dispatch = useDispatch();
@@ -96,7 +97,7 @@ function Welcome() {
       />
       <img
         className="absolute bottom-[300px] right-0"
-        src="public/Rectangle 18.svg"
+        src={logo1}
       />
       <div className="flex w-[1107px] h-[493px] m-0 ">
         <div className="w-[679px] relative">
