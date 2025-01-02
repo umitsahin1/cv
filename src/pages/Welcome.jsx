@@ -137,8 +137,8 @@ function Welcome() {
                   className="w-[31px] h-[33px]"
                   src={
                     isDarkMode
-                      ? {githubdarkmodepng}
-                      : {github}
+                      ? "/github.-darkmodepng.png"
+                      : "/github.svg"
                   }
                 />
               </a>
