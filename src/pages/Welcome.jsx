@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setTheme } from "../store/actions";
 import { languageData } from "../data/language";
-import logo1 from "public/Rectangle 18.svg"
+import logo1 from "./public/Rectangle 18.svg"
 
 function Welcome() {
   const dispatch = useDispatch();
