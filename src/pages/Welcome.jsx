@@ -8,8 +8,6 @@ import Ellipse10 from "/Ellipse 10.png"
 import Rectangle2 from "/Rectangle 2.png"
 import LinkedIndarkmode from "/LinkedIn-darkmode.png"
 import LinkedIn from "/LinkedIn.png"   
-import githubdarkmodepng from "/github.-darkmodepng.png" 
-import github from "/github.svg" 
 import Rectangle3 from "/Rectangle 3.png"  
      
 
