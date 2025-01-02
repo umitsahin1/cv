@@ -3,7 +3,6 @@ import { languageData } from "../data/language";
 
 function Footer() {
   const { language } = useSelector((state) => state.language);
-  const { isDarkMode } = useSelector((state) => state.theme);
 
   const texts = languageData[language];
   return (
@@ -11,13 +10,7 @@ function Footer() {
       <p className="font-medium text-[2.625rem] leading-[3.9375rem] w-[28.125rem] text-right z-20">
         {texts.footer_description}
       </p>
-      <div
-        className="w-[15.5rem] h-[0.9375rem] rounded-sm  absolute lg:left-[40.625rem] left-[8rem]  z-10 
-      lg:translate-y-[-0.9375rem] translate-y-[-1rem] "
-        style={{
-          backgroundColor: isDarkMode ? "#295387" : "#82BBFF",
-        }}
-      ></div>
+      <div className="w-[15.5rem] h-[0.9375rem] rounded-sm bg-[#82BBFF] absolute left-[40.625rem]  z-10 translate-y-[-0.9375rem] "></div>
       <div className="w-[9.875rem] h-[8.5625rem] flex flex-col">
         <a
           className="font-medium text-[1rem] leading-[2.25rem] text-[#1769FF]"

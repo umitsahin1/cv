@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 
+
 function Skill({ skill }) {
   const { isDarkMode } = useSelector((state) => state.theme);
   return (
@@ -14,10 +15,16 @@ function Skill({ skill }) {
           {skill.name}
         </h2>
       </div>
-      <img
-        className="absolute lg:bottom-[-15.625rem] bottom-[-83rem] left-0"
-        src="/Rectangle 22.png"
-      />
+      <img className="absolute bottom-[-15.625rem] left-0" src="/Rectangle 22.png" />
+      <div
+        className={`w-[7.5625rem] h-[7.5625rem] border-[1.3125rem] ${
+          isDarkMode ? "border-[#525252]" : "border-[#D9D9D9]"
+        }  rounded-full bg-transparent absolute bottom-[8.125rem] right-[26.875rem]`}
+      ></div>
+      <div
+        className="w-[7.5625rem] h-[7.5625rem] border-[1.3125rem] border-[#EA2678] rounded-full bg-transparent absolute 
+      bottom-[-27.5rem] right-[-3.75rem]"
+      ></div>
     </div>
   );
 }

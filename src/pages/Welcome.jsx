@@ -44,11 +44,11 @@ function Welcome() {
 
   return (
     <div
-      className={`lg:h-[46.125rem] h-[75rem] flex items-center lg:justify-center flex-col w-full ${
+      className={`h-[46.125rem] flex items-center justify-center flex-col w-full ${
         isDarkMode ? "bg-[#2A262B]" : "bg-[#F4F4F4]"
       }`}
     >
-      <div className="flex lg:gap-5 gap-3 justify-end items-center lg:w-[69.1875rem] w-[30rem] lg:mt-[0.625rem] mt-[6rem] mb-[3.125rem] text-[#777777]">
+      <div className="flex gap-5 justify-end items-center w-[69.1875rem] mt-[0.625rem] mb-[3.125rem] text-[#777777]">
         <input
           type="checkbox"
           className="checkbox"
@@ -78,7 +78,7 @@ function Welcome() {
         <p>|</p>
         <p
           onClick={toggleLanguage}
-          className="font-bold w-[11.125rem] lg:mr-0 mr-[-3.5rem] hover:scale-105 transition-transform duration-200 cursor-pointer  "
+          className="font-bold w-[11.125rem] hover:scale-105 transition-transform duration-200 cursor-pointer  "
         >
           <span className="text-[15px] leading-[1.134375rem] tracking-[0.1em] text-[#E92577]">
             {language === "en" ? "TÜRKÇE’YE " : "SWITCH TO "}
@@ -87,26 +87,23 @@ function Welcome() {
         </p>
       </div>
       <img
-        className="absolute top-0 lg:left-[34.375rem] left-10 "
+        className="absolute top-0 left-[34.375rem]"
         src={isDarkMode ? "/Ellipse 10-darkmode.png" : "/Ellipse 10.png"}
       />
       <img
-        className="absolute lg:bottom-[300px] bottom-[100px]  right-0"
+        className="absolute bottom-[300px] right-0"
         src="/Rectangle 18.svg"
       />
-      <div className="flex flex-col lg:w-[69.1875rem] sm:w-[30rem] h-[30.8125rem] m-0 lg:flex-row w-full ">
+      <div className="flex w-[69.1875rem] h-[30.8125rem] m-0 ">
         <div className="w-[42.4375rem] relative">
-          <p className="font-Inter font-normal text-[1.875rem]   leading-[2.269375rem] tracking-[0.1em] mb-8">
+          <p className="font-Inter font-normal text-[1.875rem] leading-[2.269375rem] tracking-[0.1em] mb-8">
             {texts.welcome}
           </p>
           <img
-            className="absolute left-[-20px] z-10 lg:translate-y-[40px]  translate-y-[35px] "
+            className="absolute left-[-20px] z-10 translate-y-[40px]"
             src="/Rectangle 2.png"
           />
-          <p
-            className="font-inter font-medium lg:text-[2.625rem] text-[2.2rem] leading-[4rem] tracking-[0.01em] lg:pr-[6.25rem] 
-          pr-[12rem]  z-20 absolute"
-          >
+          <p className="font-inter font-medium text-[2.625rem] leading-[4rem] tracking-[0.01em] pr-[6.25rem] z-20 absolute">
             {texts.welcome_description}
           </p>
           <div className="mt-[21.25rem]">
@@ -133,12 +130,9 @@ function Welcome() {
           </div>
         </div>
         <div className="relative mt-10">
+          <img className="z-10" src="/Rectangle 3.png" />
           <img
-            className=" z-10 sm:left-[3rem] absolute lg:relative lg:left-0 "
-            src="/Rectangle 3.png"
-          />
-          <img
-            className="w-[21.3125rem] h-[21.3125rem] rounded-[1.375rem] z-20 absolute top-0 lg:left-[3.125rem] left-[6rem] transform translate-x-[-1.875rem] translate-y-[1.25rem]"
+            className="w-[21.3125rem] h-[21.3125rem] rounded-[1.375rem] z-20 absolute top-0 left-[3.125rem] transform translate-x-[-1.875rem] translate-y-[1.25rem]"
             src="/2022-05-25 14-03-49.JPG"
           />
         </div>

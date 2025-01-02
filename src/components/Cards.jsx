@@ -46,7 +46,11 @@ function Cards({ item }) {
             {texts.go_to_app}
           </a>
           <img
-            src={isDarkMode ? "/arrow-darkmode-right.svg" : "/arrow-right.svg"}
+            src={
+              isDarkMode
+                ? "/arrow-darkmode-right.svg"
+                : "/arrow-right.svg"
+            }
           />
         </div>
       </div>
