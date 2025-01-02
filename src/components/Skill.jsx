@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import Rectangle22 from "/Rectangle 22.png"
 
 function Skill({ skill }) {
   const { isDarkMode } = useSelector((state) => state.theme);
@@ -16,7 +17,7 @@ function Skill({ skill }) {
       </div>
       <img
         className="absolute bottom-[-250px]  left-0"
-        src="public/Rectangle 22.png"
+        src={Rectangle22}
       />
       <div
         className={`w-[121px] h-[121px] border-[21px] ${
