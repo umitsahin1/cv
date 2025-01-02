@@ -48,8 +48,8 @@ function Cards({ item }) {
           <img
             src={
               isDarkMode
-                ? "public/arrow-darkmode-right.svg"
-                : "public/arrow-right.svg"
+                ? "/arrow-darkmode-right.svg"
+                : "/arrow-right.svg"
             }
           />
         </div>

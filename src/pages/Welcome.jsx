@@ -90,12 +90,12 @@ function Welcome() {
         className="absolute top-0 left-[34.375rem]"
         src={
           isDarkMode
-            ? "public/Ellipse 10-darkmode.png"
-            : "public/Ellipse 10.png"
+            ? "/Ellipse 10-darkmode.png"
+            : "/Ellipse 10.png"
         }
       />
       <img
-        className="absolute bottom-[18.75rem] right-0"
+        className="absolute bottom-[300px] right-0"
         src="public/Rectangle 18.svg"
       />
       <div className="flex w-[69.1875rem] h-[30.8125rem] m-0 ">
@@ -104,7 +104,7 @@ function Welcome() {
             {texts.welcome}
           </p>
           <img
-            className="absolute left-[-1.25rem] z-10 translate-y-[2.5rem]"
+            className="absolute left-[-20px] z-10 translate-y-[40px]"
             src="public/Rectangle 2.png"
           />
           <p className="font-inter font-medium text-[2.625rem] leading-[4rem] tracking-[0.01em] pr-[6.25rem] z-20 absolute">
@@ -117,8 +117,8 @@ function Welcome() {
                   className="w-[1.9375rem] h-[2.0625rem]"
                   src={
                     isDarkMode
-                      ? "public/LinkedIn-darkmode.png"
-                      : "public/LinkedIn.png"
+                      ? "/LinkedIn-darkmode.png"
+                      : "/LinkedIn.png"
                   }
                 />
               </a>
@@ -127,8 +127,8 @@ function Welcome() {
                   className="w-[1.9375rem] h-[2.0625rem]"
                   src={
                     isDarkMode
-                      ? "public/github.-darkmodepng.png"
-                      : "public/github.svg"
+                      ? "/github.-darkmodepng.png"
+                      : "/github.svg"
                   }
                 />
               </a>
@@ -142,10 +142,9 @@ function Welcome() {
           </div>
         </div>
         <div className="relative mt-10">
-          <img className="z-10" src="public/Rectangle 3.png" />
+          <img className="z-10" src="/Rectangle 3.png" />
           <img
-            className=" w-[21.3125rem]  h-[21.3125rem] rounded-[1.375rem] z-20 absolute top-0 left-[3.125rem] transform 
-              translate-x-[-1.875rem] translate-y-[1.25rem]"
+            className="w-[341px] h-[341px] rounded-[22px] z-20 absolute top-0 left-[50px] transform translate-x-[-30px] translate-y-[20px]"
             src="public/2022-05-25 14-03-49.JPG"
           />
         </div>

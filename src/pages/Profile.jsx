@@ -56,7 +56,7 @@ function Profile() {
         </div>
       </div>
       <img
-        className="absolute left-[55rem] z-10 translate-y-[-3.5rem]"
+        className="absolute left-[880px]  z-10 translate-y-[-56px]"
         src="public/Rectangle 39.png"
       />
     </div>
