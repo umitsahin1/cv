@@ -90,13 +90,13 @@ function Welcome() {
         className="absolute top-0 left-[550px]"
         src={
           isDarkMode
-            ? "src/assets/Ellipse 10-darkmode.png"
-            : "src/assets/Ellipse 10.png"
+            ? "public/Ellipse 10-darkmode.png"
+            : "public/Ellipse 10.png"
         }
       />
       <img
         className="absolute bottom-[300px] right-0"
-        src="src/assets/Rectangle 18.svg"
+        src="public/Rectangle 18.svg"
       />
       <div className="flex w-[1107px] h-[493px] m-0 ">
         <div className="w-[679px] relative">
@@ -105,7 +105,7 @@ function Welcome() {
           </p>
           <img
             className="absolute left-[-20px] z-10 translate-y-[40px]"
-            src="src/assets/Rectangle 2.png"
+            src="public/Rectangle 2.png"
           />
           <p className="font-inter font-medium text-[42px] leading-[64px] tracking-[0.01em] pr-[100px] z-20 absolute">
             {texts.welcome_description}
@@ -117,8 +117,8 @@ function Welcome() {
                   className="w-[31px] h-[33px]"
                   src={
                     isDarkMode
-                      ? "src/assets/LinkedIn-darkmode.png"
-                      : "src/assets/LinkedIn.png"
+                      ? "public/LinkedIn-darkmode.png"
+                      : "public/LinkedIn.png"
                   }
                 />
               </a>
@@ -127,8 +127,8 @@ function Welcome() {
                   className="w-[31px] h-[33px]"
                   src={
                     isDarkMode
-                      ? "src/assets/github.-darkmodepng.png"
-                      : "src/assets/github.svg"
+                      ? "public/github.-darkmodepng.png"
+                      : "public/github.svg"
                   }
                 />
               </a>
@@ -142,10 +142,10 @@ function Welcome() {
           </div>
         </div>
         <div className="relative mt-10">
-          <img className="z-10" src="src/assets/Rectangle 3.png" />
+          <img className="z-10" src="public/Rectangle 3.png" />
           <img
             className="w-[341px] h-[341px] rounded-[22px] z-20 absolute top-0 left-[50px] transform translate-x-[-30px] translate-y-[20px]"
-            src="src/assets/2022-05-25 14-03-49.JPG"
+            src="public/2022-05-25 14-03-49.JPG"
           />
         </div>
       </div>

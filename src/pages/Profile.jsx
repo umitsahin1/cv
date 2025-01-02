@@ -54,7 +54,7 @@ function Profile() {
       </div>
       <img
         className="absolute left-[880px]  z-10 translate-y-[-56px]"
-        src="src/assets/Rectangle 39.png"
+        src="public/Rectangle 39.png"
       />
     </div>
   );

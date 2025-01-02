@@ -16,7 +16,7 @@ function Skill({ skill }) {
       </div>
       <img
         className="absolute bottom-[-250px]  left-0"
-        src="src/assets/Rectangle 22.png"
+        src="public/Rectangle 22.png"
       />
       <div
         className={`w-[121px] h-[121px] border-[21px] ${

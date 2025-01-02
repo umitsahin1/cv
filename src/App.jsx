@@ -1,11 +1,4 @@
-import {
-  Bounce,
-  Flip,
-  Slide,
-  toast,
-  ToastContainer,
-  Zoom,
-} from "react-toastify";
+import { Flip, toast, ToastContainer } from "react-toastify";
 import "./App.css";
 import Footer from "./pages/Footer";
 import Profile from "./pages/Profile";
@@ -26,7 +19,7 @@ function App() {
       <Projects />
       <Footer />
       <ToastContainer
-        position="top-right"
+        position="top-left"
         autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -35,7 +28,7 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
+        theme="light"
         transition={Flip}
       />
     </div>

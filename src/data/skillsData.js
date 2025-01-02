@@ -1,26 +1,26 @@
 export const skillsData = [
   {
     name: "JAVASCRIPT",
-    img: "src/assets/js.png",
+    img: "public/js.png",
   },
   {
     name: "REACT",
-    img: "src/assets/react.png",
+    img: "public/react.png",
   },
   {
     name: "REDUX",
-    img: "src/assets/redux.svg",
+    img: "public/redux.svg",
   },
   {
     name: "NODE",
-    img: "src/assets/node.png",
+    img: "public/node.png",
   },
   {
     name: "VS CODE",
-    img: "src/assets/vscode.png",
+    img: "public/vscode.png",
   },
   {
     name: "FIGMA",
-    img: "src/assets/figma.png",
+    img: "public/figma.png",
   },
 ];
