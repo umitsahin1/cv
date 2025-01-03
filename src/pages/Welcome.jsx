@@ -134,7 +134,7 @@ function Welcome() {
         </div>
         <div className="relative mt-10">
           <img
-            className="z-10 sm:left-[3rem] absolute lg:relative lg:left-0 "
+            className="z-10 left-[3rem] absolute lg:relative lg:left-0  xs:left-[3rem]"
             src="/Rectangle 3.png"
           />
           <img

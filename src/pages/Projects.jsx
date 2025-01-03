@@ -27,7 +27,7 @@ function Projects() {
       <h1 className="font-[500] text-[2.25rem] leading-[2.723125rem] flex  justify-center">
         {texts.projects}
       </h1>
-      <div className="flex lg:gap-10 lg:flex-row flex-col gap-20 xs:ml-2.5">
+      <div className="flex lg:gap-10 lg:flex-row flex-col gap-20 xs:ml-[0.7rem]">
         {localizedData.map((item) => (
           <Cards item={item} key={item.id} />
         ))}

@@ -17,7 +17,7 @@ function Profile() {
       </p>
       <div
         className="card w-[31.25rem] h-[19.5625rem] rounded-[0.75rem] flex flex-col justify-center pl-[1.875rem] absolute 
-       lg:left-[21.25rem] left-[5rem] z-10  lg:translate-y-[4.375rem] translate-y-[-4rem] bg-[#52525280] xs:left-[-3rem] "
+       lg:left-[21.25rem] left-[5rem] z-10  lg:translate-y-[4.375rem] translate-y-[-4rem] bg-[#52525280] xs:left-[1.1rem] xs:translate-y-[-4.6rem]"
       ></div>
       <div className="flex  lg:flex-row flex-col items-center lg:gap-10">
         <div
@@ -56,7 +56,7 @@ function Profile() {
         </div>
       </div>
       <img
-        className="absolute lg:left-[55rem] z-10 lg:translate-y-[-3.5rem] left-[5.5rem] translate-y-[9.5rem]"
+        className="absolute lg:left-[55rem] z-10 lg:translate-y-[-3.5rem] left-[5.5rem] translate-y-[9.5rem] xs:left-[1.8rem]"
         src="/Rectangle 39.png"
       />
     </div>

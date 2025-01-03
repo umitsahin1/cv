@@ -18,7 +18,7 @@ function Footer() {
           backgroundColor: isDarkMode ? "#295387" : "#82BBFF",
         }}
       ></div>
-      <div className="w-[9.875rem] h-[8.5625rem] flex flex-col text-[1rem] xs:text-[0.8rem]">
+      <div className="w-[9.875rem] h-[8.5625rem] flex flex-col text-[1rem] xs:text-[0.9rem]">
         <a
           className="font-medium leading-[2.25rem] text-[#1769FF]"
           href="https://github.com/umitsahin1"

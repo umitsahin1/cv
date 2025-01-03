@@ -3,7 +3,7 @@ export const languageData = {
     profile: "Profile",
     skills: "Skills",
     projects: "Projects",
-    aboutMe: "About Me",
+    aboutMe: "About me",
     welcome: "Hi! 👋",
     welcome_description:
       "I’m Umit. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
