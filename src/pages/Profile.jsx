@@ -17,7 +17,7 @@ function Profile() {
       </p>
       <div
         className="card w-[31.25rem] h-[19.5625rem] rounded-[0.75rem] flex flex-col justify-center pl-[1.875rem] absolute 
-       lg:left-[21.25rem] left-[5rem] z-10  lg:translate-y-[4.375rem] translate-y-[-4rem] bg-[#52525280]"
+       lg:left-[21.25rem] left-[5rem] z-10  lg:translate-y-[4.375rem] translate-y-[-4rem] bg-[#52525280] xs:left-[-3rem] "
       ></div>
       <div className="flex  lg:flex-row flex-col items-center lg:gap-10">
         <div

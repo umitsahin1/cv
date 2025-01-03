@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: Inter;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   color: #000;
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
+  margin: 0;
 }
 html {
   overflow-x: hidden;
