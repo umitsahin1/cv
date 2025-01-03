@@ -95,7 +95,7 @@ function Welcome() {
         src="/Rectangle 18.svg"
       />
       <div className=" flex flex-col lg:w-[69.1875rem] w-[30rem] h-[30.8125rem] m-0 lg:flex-row  ">
-        <div className="w-[42.4375rem] relative">
+        <div className="lg:w-[42.4375rem] relative">
           <p className="font-Inter font-normal text-[1.875rem] leading-[2.269375rem] tracking-[0.1em] mb-8">
             {texts.welcome}
           </p>
@@ -105,7 +105,7 @@ function Welcome() {
           />
           <p
             className="font-inter font-medium lg:text-[2.625rem] text-[2.2rem] leading-[4rem] tracking-[0.01em] 
-          lg:pr-[6.25rem] pr-[12rem]  z-20 absolute"
+          lg:pr-[6.25rem] pr-4  z-20 absolute"
           >
             {texts.welcome_description}
           </p>

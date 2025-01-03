@@ -7,7 +7,7 @@ function Footer() {
 
   const texts = languageData[language];
   return (
-    <div className="w-[47.375rem] h-[8.5625rem] mt-[3.125rem] mb-[3.125rem] flex justify-around items-center ">
+    <div className="lg:w-[47.375rem] h-[8.5625rem] mt-[3.125rem] mb-[3.125rem] flex justify-around items-center  ">
       <p className="font-medium text-[2.625rem] leading-[3.9375rem] w-[28.125rem] text-right z-20">
         {texts.footer_description}
       </p>

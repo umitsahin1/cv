@@ -8,13 +8,13 @@ function Skills() {
   const { isDarkMode } = useSelector((state) => state.theme);
   const texts = languageData[language];
   return (
-    <div className="flex flex-col items-center gap-20 mb-20">
+    <div className="flex flex-col items-center gap-20 mb-20 w-full">
       <h1 className="font-medium text-[3rem] leading-[3.630625rem] tracking-[0.1em]">
         {texts.skills}
       </h1>
       <div className="lg:flex gap-10 lg:flex-row grid grid-cols-3  ">
         {skillsData.map((skill, index) => (
-          <Skill key={index} skill={skill} /> 
+          <Skill key={index} skill={skill} />
         ))}
       </div>
       <div

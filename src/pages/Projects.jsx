@@ -23,7 +23,7 @@ function Projects() {
   }));
 
   return (
-    <div className="lg:w-[66.5rem] flex flex-col gap-10">
+    <div className="lg:w-[66.5rem] flex flex-col gap-10 w-full">
       <h1 className="font-[500] text-[2.25rem] leading-[2.723125rem] flex  justify-center">
         {texts.projects}
       </h1>
