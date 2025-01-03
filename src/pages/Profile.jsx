@@ -8,7 +8,7 @@ function Profile() {
   const texts = languageData[language];
   return (
     <div
-      className={`h-[46.125rem] flex items-center justify-center flex-col w-full gap-20  ${
+      className={`lg:h-[46.125rem] h-[60rem]  flex items-center justify-center flex-col w-full gap-20  ${
         isDarkMode ? "bg-[#2A262B]" : "bg-[#F4F4F4]"
       }`}
     >
@@ -17,9 +17,9 @@ function Profile() {
       </p>
       <div
         className="card w-[31.25rem] h-[19.5625rem] rounded-[0.75rem] flex flex-col justify-center pl-[1.875rem] absolute 
-      left-[21.25rem] z-10  translate-y-[4.375rem] bg-[#52525280]"
+       lg:left-[21.25rem] left-[5rem] z-10  lg:translate-y-[4.375rem] translate-y-[-4rem] bg-[#52525280]"
       ></div>
-      <div className="flex  items-center gap-10">
+      <div className="flex  lg:flex-row flex-col items-center lg:gap-10">
         <div
           className={`card w-[31.25rem] h-[19.5625rem] rounded-[0.75rem] flex flex-col justify-center pl-[1.875rem] z-20 ${
             isDarkMode ? "bg-[#525252]" : "bg-[#FFFFFF]"
@@ -43,7 +43,7 @@ function Profile() {
             </div>
           </div>
         </div>
-        <div className="w-[29.75rem] h-[15.0625rem] flex flex-col gap-6 py-0 px-4 mt-[-3.125rem]">
+        <div className="w-[29.75rem] h-[15.0625rem] flex flex-col gap-6 py-0 px-4 lg:mt-[-3.125rem] mt-[3.125rem]">
           <p className="font-normal text-[1.5rem] leading-[2rem] tracking-[1%] z-20 font-playfair">
             {texts.aboutMe}
           </p>
@@ -56,7 +56,7 @@ function Profile() {
         </div>
       </div>
       <img
-        className="absolute left-[55rem] z-10 translate-y-[-3.5rem]"
+        className="absolute lg:left-[55rem] z-10 lg:translate-y-[-3.5rem] left-[5.5rem] translate-y-[9.5rem]"
         src="/Rectangle 39.png"
       />
     </div>

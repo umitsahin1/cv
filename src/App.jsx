@@ -12,7 +12,7 @@ function App() {
     toast.success("Sayfama Hoşgeldiniz!");
   }, []);
   return (
-    <div className="flex flex-col items-center gap-20 sm:  ">
+    <div className="flex flex-col items-center gap-20 ">
       <Welcome />
       <Skills />
       <Profile />
