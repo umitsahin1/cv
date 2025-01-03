@@ -8,7 +8,7 @@ function Skills() {
   const { isDarkMode } = useSelector((state) => state.theme);
   const texts = languageData[language];
   return (
-    <div className="flex flex-col items-center gap-20 mb-20 w-full">
+    <div className="flex flex-col items-center gap-20 mb-20 w-full relative z-10 lg:static">
       <h1 className="font-medium text-[3rem] leading-[3.630625rem] tracking-[0.1em]">
         {texts.skills}
       </h1>
@@ -19,7 +19,7 @@ function Skills() {
       </div>
       <div
         className="w-[7.5625rem] h-[7.5625rem] border-[1.3125rem] border-[#EA2678] rounded-full bg-transparent absolute 
-      lg:bottom-[-27.5rem] lg:right-[-3.75rem] bottom-[-89rem] right-[-3.75rem] "
+      lg:bottom-[-27.5rem] lg:right-[-3.75rem] bottom-[-89rem] right-[-3.75rem] z-20 "
       ></div>
       <div
         className={`w-[7.5625rem] h-[7.5625rem] border-[1.3125rem] ${
